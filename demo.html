@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Free Full Screen Photo Gallery</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <meta name="author" content="Tim Vervoort" />
+      <meta name="copyright" content="Tim Vervoort" />
+      <meta name="generator" content="Tim Vervoort" />
+      <link rel="dns-prefetch" href="https://code.jquery.com" />
+      <link rel="stylesheet" type="text/css" href="popupcss/fs-gal.css" />
+      <style type="text/css">
+          /* For demo only */
+          html, body {
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              width: 100%;
+              text-align: center;
+          }
+          .fs-gal {
+              width: 15%;
+              height: 80%;
+              float: center;
+          }
+      </style>
+    </head>
+    <body>
+
+        <!-- Create objects with class 'fs-gal' and include the attribute 'data-url' with the relative or absolute path which is to be displayed. -->
+        <img class="fs-gal" src="popupimg/1.jpg" alt="" data-url="popupimg/1.jpg" /><!-- Alt tags can be used to display info in the gallery viewer. -->
+        <img class="fs-gal" src="popupimg/2.jpg" title="" data-url="popupimg/2.jpg" /><!-- The title tag can be used as well. -->
+        <img class="fs-gal" src="popupimg/3.jpg" data-url="popupimg/3.jpg" />
+        <img class="fs-gal" src="popupimg/4.jpg" data-url="popupimg/4.jpg" />
+         <img class="fs-gal" src="popupimg/5.jpg" data-url="popupimg/5.jpg" />
+        <!-- Full screen gallery. -->
+        <div class="fs-gal-view">
+            <h1></h1>
+            <img class="fs-gal-prev fs-gal-nav" src="popupimg/prev.svg" alt="Previous picture" title="Previous picture" />
+            <img class="fs-gal-next fs-gal-nav" src="popupimg/next.svg" alt="Next picture" title="Next picture" />
+            <img class="fs-gal-close" src="popupimg/close.svg" alt="Close gallery" title="Close gallery" />
+            <img class="fs-gal-main" src="" alt="" />
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="popupjs/fs-gal.js"></script>
+
+    </body>
+</html>
